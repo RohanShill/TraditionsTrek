@@ -1,0 +1,137 @@
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+/* Root element (aka html) */
+:root {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	/* CSS Variables */
+	/* Fonts */
+	--ff-parisienne: "Parisienne", cursive;
+	--ff-montserrat: "Montserrat", sans-serif;
+	--ff-lora: "Lora", serif;
+	--ff-roboto: "Roboto", sans-serif;
+	--ff-rubik-dirt: "Rubik Dirt", cursive;
+	--fs-paragraphs: calc(0.8rem + 0.35vw);
+	--fs-links-btns: calc(0.65rem + 0.5vw);
+}
+
+/* Global */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+span {
+	color: #7c7c7c;
+	padding: 0px 40px;
+}
+/*scrollbar*/
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 10px;
+}
+
+/* Navbar */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: saturate(180%) blur(10px);
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 5px;
+	z-index: 10;
+	color: whitesmoke;
+}
+
+.logo {
+	font-family: var(--ff-rubik-dirt);
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	padding: 0 1.2rem;
+	font-weight: 300;
+	color: rgb(254, 252, 252);
+
+
+}
+
+
+
+.nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li {
+	font-family: var(--ff-montserrat);
+	margin: 0px 15px;
+}
+
+.nav-links li a {
+	color: white;
+	cursor: pointer;
+}
+
+.cir_border {
+	padding: 6px 20px;
+	font-weight: bold;
+	border: 2px hidden whitesmoke;
+	border-radius: 20px;
+	margin: 0px -10px;
+}
+/* title */
+.title{
+	color: brown;
+		margin-top: 100px
+
+	;
+}
+
+/* Dark Mode Styles Scroll Button  */
+.dark .arrow {
+	&::before {
+		border-color: black;
+	}
+
+	&:after {
+		border-color: black;
+	}
+
+	&:hover::after {
+		border-color: #fc036b;
+	}
+
+	&:hover::before {
+		border-color: #fc036b;
+	}
+}

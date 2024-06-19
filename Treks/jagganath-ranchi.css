@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f6eeee;
+	color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+	color: rgb(255, 255, 255);
+	padding: 1rem 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo-image {
+	height: 60px;
+	width: auto;
+	margin-right: 1rem;
+}
+
+.logo-text {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: 'Lumanosimo', cursive;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+nav ul li {
+	margin: 0;
+	position: relative;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	padding-bottom: 5px;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	color: #ffe082;
+}
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #ffe082;
+	transition: width 0.3s;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+	width: 100%;
+}
+
+main {
+	padding: 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Article-Specific Styles */
+article {
+	background: rgb(255, 217, 217);
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	/* Heading for the article title */
+	color: #3f51b5;
+	border-bottom: 2px solid #3f51b5;
+	padding-bottom: 0.5rem;
+}
+
+/* Optional: Styles for other article elements */
+article p {
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+article h3 {
+	/* Subheadings within the article */
+	color: #ff7e5f;
+	margin-top: 1.5rem;
+}
+
+/* ... add more styles for other elements as needed */
+
+footer {
+	background-color: #3f51b5;
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}

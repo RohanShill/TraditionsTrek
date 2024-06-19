@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="form-container">
+		<h2>Community</h2>
+		<form id="postForm">
+			<div class="form-group">
+				<label for="image">Image:</label>
+				<input type="file" id="image" name="image" required>
+			</div>
+			<div class="form-group">
+				<label for="caption">Caption:</label>
+				<input type="text" id="caption" name="caption" required>
+			</div>
+			<button type="submit">Post</button>
+		</form>
+		<div id="posts"></div>
+	</div>
+	<script src="community.js"></script>
+</body>
+
+</html>

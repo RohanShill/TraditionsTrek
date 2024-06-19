@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Traditions Trek - Deoghar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/Treks/deoghar.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body
+	onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+	<!--navbar-->
+	<nav class="navbar glass" style="height: 70px">
+		<span><a href="index.html" style="display: flex; align-items: center"><img class="img2"
+					src="./img/Traditions Trek LOGO.jpg" width="50" style="margin: -25px -10px -25px -20px" />
+				<h1 class="logo">&nbsp;Traditions Trek</h1>
+			</a></span>
+		<ul class="nav-links">
+			<li><a href="index.html" id="pri" class="cir_border">Home</a></li>
+			<li><a href="treks.html" id="sec" class="cir_border">Treks</a></li>
+			<li><a href="explore.html" id="tri" class="cir_border">Explore</a></li>
+			<li><a href="about.html" id="quint" class="cir_border">About</a></li>
+			<li><a href="contact.html" id="hept" class="cir_border">Contact</a></li>
+			<li>
+				<div>
+					<input type="checkbox" class="checkbox dark" id="checkbox" />
+					<label for="checkbox" class="label">
+						<i class="fa fa-moon-o"></i>
+						<i class="fa fa-sun-o"></i>
+						<div class="ball"></div>
+					</label>
+				</div>
+			</li>
+		</ul>
+		<img src="img/menu-btn.png" alt="" class="menu-btn" />
+	</nav>
+	<!--navbar-->
+
+	<section class="title">
+		<div>
+			<u><h1 class="title">Baba Baidyanath Dham Temple</h1></u>
+		</div>
+		<div>
+			<!-- <source> <img src="/img/tarapith.jpg" alt=""> -->
+			<!-- Add any additional information or image slider here -->
+		</div>
+	</section>
+
+	<section class="details">
+		<p>Deoghar is home to the Baidyanath Jyotirlinga Temple, also known as Baba Baidyanath Dham. It is one of the
+			twelve Jyotirlingas, the most sacred abodes of Shiva. This temple is a significant pilgrimage site for
+			Hindus.</p>
+		<!-- Add more detailed information here -->
+	</section>
+
+	<section class="gallery">
+		<h2>Gallery</h2>
+		<div class="gallery-container">
+			<!-- Add images of Deoghar here -->
+		</div>
+	</section>
+
+	<section class="booking">
+		<h2>Hotel Booking</h2>
+		<form id="hotel-booking-form">
+			<input type="text" id="location" placeholder="Enter location" required>
+			<input type="date" id="checkin" required>
+			<input type="date" id="checkout" required>
+			<button type="submit">Search Hotels</button>
+		</form>
+		<div id="hotel-results"></div>
+	</section>
+
+	<section class="comments">
+		<h2>Comments</h2>
+		<div id="comments-section">
+			<!-- User comments will be displayed here -->
+		</div>
+		<form id="comment-form">
+			<textarea id="comment" placeholder="Write your comment..." required></textarea>
+			<button type="submit">Post Comment</button>
+		</form>
+	</section>
+
+	<!--footer-->
+	<section class="footer">Rohan Shill | &#169; 2024 All rights reserved.
+		<div class="social">
+			<!-- Add social media links here -->
+		</div>
+	</section>
+	<!--footer-->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="js/deoghar.js"></script>
+	<script>
+		const menuBtn = document.querySelector(".menu-btn");
+		const navlinks = document.querySelector(".nav-links");
+
+		menuBtn.addEventListener("click", () => {
+			navlinks.classList.toggle("mobile-menu");
+		});
+	</script>
+</body>
+
+</html>
